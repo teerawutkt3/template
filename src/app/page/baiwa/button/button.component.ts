@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+   
+  ) { }
 
   btn: string = `
   Ts : import ButtonModule
@@ -24,5 +26,5 @@ export class ButtonComponent implements OnInit {
   `;
   ngOnInit() {
   }
-
+  
 }

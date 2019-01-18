@@ -7,6 +7,7 @@ import { LayoutComponent } from './common/layout/layout.component';
 import { DashboardComponent } from './page/dashboard/dashboard.component';
 import { Dashboard2Component } from './page/dashboard2/dashboard2.component';
 import { CardModule } from './components';
+import { BlockUiService } from './common/block-ui/block-ui.service';
 
 @NgModule({
   
@@ -21,7 +22,9 @@ import { CardModule } from './components';
     DashboardComponent,
     Dashboard2Component,
   ],
-  providers: [],
+  providers: [
+    BlockUiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

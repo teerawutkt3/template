@@ -6,7 +6,7 @@
     </div>
 
     <ul class="list-unstyled components">
-      <p>Dummy Heading</p>
+      <p>Dummy Heading </p>
       <li>
         <a routerLink="/dashboard" routerLinkActive="active">
           <i class="fa fa-tachometer"></i> Dashboard
@@ -17,7 +17,7 @@
           <i class="fa fa-tachometer"></i> Dashboard2
         </a>
       </li>
-      <li class="active">
+      <li>
         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
           <i class="fa fa-gg-circle"></i> Components
         </a>
@@ -28,6 +28,9 @@
           <li>
             <a href="#" routerLink="/components/cards" routerLinkActive="active"><i class="fa fa-minus"></i> Card</a>
           </li>
+          <li>
+              <a href="#" routerLink="/components/blockui" routerLinkActive="active"><i class="fa fa-minus"></i> Block Ui</a>
+            </li>
         </ul>
       </li>
       <li>
@@ -78,16 +81,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Dashboard</a>
+              <a class="nav-link" href="#"routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Dashboard2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Page</a>
+              <a class="nav-link" href="#"routerLink="/dashboard2" routerLinkActive="active">Dashboard2</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign in</a>
             </li>
           </ul>
         </div>

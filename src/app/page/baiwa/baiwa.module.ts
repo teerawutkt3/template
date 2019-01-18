@@ -5,15 +5,18 @@ import { ButtonComponent } from './button/button.component';
 import { CardsComponent } from './cards/cards.component';
 import { ButtonModule } from 'src/app/components/buttons/button.module';
 import { CardModule } from 'src/app/components/card/card.module';
+import { BlockuiComponent } from './blockui/blockui.component';
 const routes: Routes = [
   { path: 'buttons', component: ButtonComponent },
   { path: 'cards', component: CardsComponent },
+  { path: 'blockui', component: BlockuiComponent },
 ];
 
 @NgModule({
   declarations: [
     ButtonComponent,
-    CardsComponent
+    CardsComponent,
+    BlockuiComponent,
   ],
   imports: [
     CommonModule,
