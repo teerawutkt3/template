@@ -10,6 +10,8 @@ export class ButtonComponent implements OnInit {
   constructor() { }
 
   btn: string = `
+  Ts : import ButtonModule
+
   <button-add></button-add>
   <button-back></button-back>
   <button-cancel></button-cancel>

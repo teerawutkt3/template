@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardHeaderComponent } from './card-header/card-header.component';
+import { CardBodyComponent } from './card-body/card-body.component';
 
 @NgModule({
   
@@ -8,10 +9,12 @@ import { CardHeaderComponent } from './card-header/card-header.component';
     CommonModule
   ],
   declarations: [
-    CardHeaderComponent
+    CardHeaderComponent,
+    CardBodyComponent,    
   ],
   exports: [
-    CardHeaderComponent
+    CardHeaderComponent,
+    CardBodyComponent
   ]
 })
 export class CardModule { }

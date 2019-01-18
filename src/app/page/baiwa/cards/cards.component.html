@@ -1,3 +1,28 @@
-<p>
-  cards works!
-</p>
+<div class="form-group">
+    <app-card-header header="Card header">
+        <div class="row">
+            <div class="col-sm-6">
+                <app-card-header header="Title">
+                    <p>content</p>
+                </app-card-header>
+            </div>
+            <div class="col-sm-6">
+                <pre>{{cardHeader}}</pre>
+            </div>
+        </div>
+    </app-card-header>
+</div>
+<div class="form-group">
+    <app-card-header header="Card body">
+        <div class="row">
+            <div class="col-sm-6">
+                <app-card-body>
+                    <p>content</p>
+                </app-card-body>
+            </div>
+            <div class="col-sm-6">
+                <pre>{{cardBody}}</pre>
+            </div>
+        </div>
+    </app-card-header>
+</div>
