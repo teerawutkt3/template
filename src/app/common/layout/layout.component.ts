@@ -11,12 +11,17 @@ export class LayoutComponent implements OnInit {
   constructor() {
   }
 
+
   ngOnInit() {
     $(document).ready(function () {
       $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
+      });
     });
-  });
+
+    // $("#sidebarCollapse").click(() => {
+    //     $(".dataTables_scrollHeadInner").css('width', '100%');      
+    // })
   }
 
 

@@ -26,8 +26,9 @@
   max-width: 250px;
   min-height: 100vh;
 }
-a[data-toggle="collapse"] {
+a[data-toggle="collapse"], .table {
   position: relative;
+  width: 100%;
 }
 
 .dropdown-toggle::after {

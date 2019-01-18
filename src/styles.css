@@ -1,5 +1,14 @@
 @import "assets/font/fonts.css";
 
+/* Datatable pagination */
+.pagination {
+    margin: 11px 0 !important;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
 .btn {
     margin-left: 2px;
     margin-right: 2px;

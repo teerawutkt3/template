@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ButtonComponent implements OnInit {
 
   constructor(
-   
+
   ) { }
 
   btn: string = `
@@ -24,7 +24,9 @@ export class ButtonComponent implements OnInit {
   <button-save></button-save>
   <button-select></button-select>
   `;
+
   ngOnInit() {
+    
   }
-  
+
 }
