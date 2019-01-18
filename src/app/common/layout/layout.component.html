@@ -1,6 +1,6 @@
 <div class="wrapper">
   <!-- Sidebar  -->
-  <nav id="sidebar">
+  <nav id="sidebar" class="shadow">
     <div class="sidebar-header">
       <h3>Bootstrap</h3>
     </div>
@@ -8,20 +8,26 @@
     <ul class="list-unstyled components">
       <p>Dummy Heading</p>
       <li>
-        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+        <a routerLink="/dashboard" routerLinkActive="active">
+          <i class="fa fa-tachometer"></i> Dashboard
+        </a>
       </li>
       <li>
-        <a routerLink="/dashboard2" routerLinkActive="active">Dashboard2</a>
+        <a routerLink="/dashboard2" routerLinkActive="active">
+          <i class="fa fa-tachometer"></i> Dashboard2
+        </a>
       </li>
       <li class="active">
-        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+          <i class="fa fa-gg-circle"></i> Components
+        </a>
         <ul class="collapse list-unstyled" id="homeSubmenu">
           <li>
-            <a href="#" routerLink="/components/buttons" routerLinkActive="active">Button</a>
+            <a href="#" routerLink="/components/buttons" routerLinkActive="active"><i class="fa fa-minus"></i> Button</a>
           </li>
           <li>
-              <a href="#" routerLink="/components/cards" routerLinkActive="active">Card</a>
-            </li>
+            <a href="#" routerLink="/components/cards" routerLinkActive="active"><i class="fa fa-minus"></i> Card</a>
+          </li>
         </ul>
       </li>
       <li>
@@ -64,9 +70,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-light shadow colorNav">
       <div class="container-fluid">
         <i class="fa fa-bars" aria-hidden="true" id="sidebarCollapse" style="color:aliceblue"></i>
-        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="btn btn-info d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-align-justify"></i>
+          <i class="fa fa-bars" ></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
