@@ -16,12 +16,10 @@ export class LayoutComponent implements OnInit {
     $(document).ready(function () {
       $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
+        $(".dataTables_scrollHeadInner").css({ "width": "100%" });
+        $(".table ").css({ "width": "100%" });
       });
     });
-
-    // $("#sidebarCollapse").click(() => {
-    //     $(".dataTables_scrollHeadInner").css('width', '100%');      
-    // })
   }
 
 

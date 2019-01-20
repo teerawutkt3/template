@@ -312,20 +312,20 @@ export class DatatableComponent implements OnInit {
       pagingType: 'full_numbers',
       ordering: false,
       scrollX: true,
-      // data: this.datas,
-      // columns: [{
-      //   data: 'data1'
-      // }, {
-      //   data: 'data2'
-      // }, {
-      //   data: 'data3'
-      // }, {
-      //   data: 'data4'
-      // }, {
-      //   data: 'data5'
-      // }, {
-      //   data: 'data6'
-      // }]
+      data: this.datas,
+      columns: [{
+        data: 'data1'
+      }, {
+        data: 'data2'
+      }, {
+        data: 'data3'
+      }, {
+        data: 'data4'
+      }, {
+        data: 'data5'
+      }, {
+        data: 'data6'
+      }]
     };
   }
 
