@@ -8,12 +8,14 @@ import { CardModule } from 'src/app/components/card/card.module';
 import { BlockuiComponent } from './blockui/blockui.component';
 import { DataTablesModule } from 'angular-datatables';
 import { DatatableComponent } from './datatable/datatable.component';
+import { LoginComponent } from './page/login/login.component';
 
 const routes: Routes = [
   { path: 'buttons', component: ButtonComponent },
   { path: 'cards', component: CardsComponent },
   { path: 'blockui', component: BlockuiComponent },
   { path: 'datatable', component: DatatableComponent },
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({
@@ -22,6 +24,7 @@ const routes: Routes = [
     CardsComponent,
     BlockuiComponent,
     DatatableComponent,
+    LoginComponent,
   ],
   imports: [
     CommonModule,
