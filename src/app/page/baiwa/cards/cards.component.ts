@@ -12,16 +12,16 @@ export class CardsComponent implements OnInit {
   cardHeader: string = `
         Ts : import  CardsComponent
 
-        <app-card-header header="Title">
+        <app-card header="Title">
             <p>content</p>
-        </app-card-header>`
+        </app-card>`
 
   cardBody: string = `
         Ts : import  CardsComponent
 
-        <app-card-body>
+        <app-card>
             <p>content</p>
-        </app-card-body>`
+        </app-card>`
   ngOnInit() {
   }
 

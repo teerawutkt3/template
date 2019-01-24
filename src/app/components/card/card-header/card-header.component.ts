@@ -1,13 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-card-header',
+  selector: 'app-card',
   templateUrl: './card-header.component.html',
   styleUrls: ['./card-header.component.css']
 })
 export class CardHeaderComponent implements OnInit {
 
-  @Input() header : string = 'Title';
+  @Input() header : string = '';
   constructor() { }
 
   ngOnInit() {

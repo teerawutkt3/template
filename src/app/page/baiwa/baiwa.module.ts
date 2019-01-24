@@ -9,6 +9,7 @@ import { BlockuiComponent } from './blockui/blockui.component';
 import { DataTablesModule } from 'angular-datatables';
 import { DatatableComponent } from './datatable/datatable.component';
 import { LoginComponent } from './page/login/login.component';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 const routes: Routes = [
   { path: 'buttons', component: ButtonComponent },
@@ -28,8 +29,7 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    ButtonModule,
-    CardModule,
+    ComponentsModule,
     DataTablesModule,
     RouterModule.forChild(routes)
   ],
