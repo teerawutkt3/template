@@ -23,6 +23,10 @@ export class ButtonComponent implements OnInit {
   <button-print></button-print>
   <button-save></button-save>
   <button-select></button-select>
+
+
+
+  <button-custom color="warning">Custom!!</button-custom>
   `;
 
   ngOnInit() {

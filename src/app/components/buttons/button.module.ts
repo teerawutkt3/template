@@ -9,6 +9,7 @@ import { ButtonCancelComponent } from './button-cancel/button-cancel.component';
 import { ButtonPrintComponent } from './button-print/button-print.component';
 import { ButtonNextComponent } from './button-next/button-next.component';
 import { ButtonSelectComponent } from './button-select/button-select.component';
+import { ButtonCustomComponent } from './button-custom/button-custom.component';
 
 @NgModule({
 
@@ -24,7 +25,8 @@ import { ButtonSelectComponent } from './button-select/button-select.component';
     ButtonCancelComponent,
     ButtonPrintComponent,
     ButtonNextComponent,
-    ButtonSelectComponent
+    ButtonSelectComponent,    
+    ButtonCustomComponent
   ],
   exports: [
     ButtonAddComponent,
@@ -35,7 +37,8 @@ import { ButtonSelectComponent } from './button-select/button-select.component';
     ButtonCancelComponent,
     ButtonPrintComponent,
     ButtonNextComponent,
-    ButtonSelectComponent
+    ButtonSelectComponent,
+    ButtonCustomComponent
   ],
 
 })
