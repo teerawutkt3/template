@@ -1,10 +1,9 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="javascript:void(0)"outerLink="/">Home</a></li>
     <li class="breadcrumb-item" *ngFor="let item of breadcrumb" >
-        <a  *ngIf="item.link != '#'" routerLink="/">{{item.label}}</a>
-        <span *ngIf="item.link == '#'">{{item.label}}</span>
+        <!-- <a href="/components/buttons" *ngIf="item.link != '#'" routerLink="/components/buttons">{{item.label}}</a> -->
+        <span>{{item.label}}</span>
     </li>
   </ol>
 </nav>
-<p *ngFor="let item of breadcrumb">{{item.link}} &nbsp; {{item.label}}</p>

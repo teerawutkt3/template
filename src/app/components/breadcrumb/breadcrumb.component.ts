@@ -10,8 +10,12 @@ export class BreadcrumbComponent implements OnInit {
   @Input() breadcrumb: any = [
 
     {
-      label: "Home",
-      link: "/",
+      label: "test",
+      link: "/components/buttons",
+    },
+    {
+      label: "test2",
+      link: "#",
     },
   ]
   constructor() { }
