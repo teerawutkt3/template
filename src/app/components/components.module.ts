@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ButtonModule } from './buttons/button.module';
 import { CardModule } from './card/card.module';
 import { BreadcrumbModule } from './breadcrumb/breadcrumb.module';
+import { NotificationModule } from './notification/notification.module';
+import { AlertService } from './notification/alert/alert.service';
 
 @NgModule({
   declarations: [],
@@ -10,12 +12,15 @@ import { BreadcrumbModule } from './breadcrumb/breadcrumb.module';
     CommonModule,
     ButtonModule,
     CardModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    NotificationModule
   ],
   exports: [
     ButtonModule,
     CardModule,
-    BreadcrumbModule
-  ]
+    BreadcrumbModule,
+    NotificationModule
+  ],
+  providers:[AlertService]
 })
 export class ComponentsModule { }
