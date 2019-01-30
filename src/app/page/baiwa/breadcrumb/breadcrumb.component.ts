@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BreadcrumbComponent implements OnInit {
 
-  constructor() { }
-
-  breadcrumb = `
+  breadcrumb:any =  [
+    {
+      label: "test",
+      link: "/",
+    },
+    {
+      label: "test2",
+      link: "#",
+    }
+  ]
+  breadcrumbText = `
   TS : 
   breadcrumb = [
     {
@@ -25,6 +33,9 @@ export class BreadcrumbComponent implements OnInit {
   HTML:
   <app-breadcrumb [breadcrumb]="breadcrumb"></app-breadcrumb>
   `
+
+  constructor() { }
+  
   ngOnInit() {
   }
 

@@ -17,17 +17,17 @@ export class ButtonComponent implements OnInit {
 
   <button-add></button-add>
   <button-back></button-back>
-  <button-cancel></button-cancel>
+  <button-cancel btnType="reset"></button-cancel>
   <button-delete></button-delete>
   <button-edit></button-edit>
   <button-next></button-next>
   <button-print></button-print>
-  <button-save></button-save>
+  <button-save btnType="submit"></button-save>
   <button-select></button-select>
   <button-confirm></button-confirm>
 
 
-  <button-custom color="warning">Custom!!</button-custom>
+  <button-custom btnType="submit" color="warning">Custom!!</button-custom>
   `;
 
   ngOnInit() {

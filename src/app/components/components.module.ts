@@ -13,13 +13,14 @@ import { AlertService } from './notification/alert/alert.service';
     ButtonModule,
     CardModule,
     BreadcrumbModule,
-    NotificationModule
+    NotificationModule,
+    
   ],
   exports: [
     ButtonModule,
     CardModule,
     BreadcrumbModule,
-    NotificationModule
+    NotificationModule,
   ],
   providers:[AlertService]
 })

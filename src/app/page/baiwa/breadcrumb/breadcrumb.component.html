@@ -2,11 +2,16 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="form-group">
-                <app-breadcrumb></app-breadcrumb>
+                <app-breadcrumb [breadcrumb]="breadcrumb"></app-breadcrumb>
             </div>
             <div class="form-group">
+                <hr>
+                <h4 *ngFor="let item of breadcrumb">
+                    {{item.label}}
+                </h4>
+                <hr>
                 <h1>Using</h1>
-                <pre>{{breadcrumb}}</pre>
+                <pre>{{breadcrumbText}}</pre>
             </div>
         </div>
     </div>

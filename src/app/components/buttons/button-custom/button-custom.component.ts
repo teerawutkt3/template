@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ButtonCustomComponent implements OnInit {
 
   @Input() color: string = 'primary';
+  @Input() btnType: string = "button";
   constructor() { }
 
   ngOnInit() {

@@ -9,6 +9,8 @@ import { DatatableComponent } from './datatable/datatable.component';
 import { LoginComponent } from './page/login/login.component';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { DatepickerComponent } from './datepicker/datepicker.component';
 
 const routes: Routes = [
   { path: 'buttons', component: ButtonComponent },
@@ -17,6 +19,7 @@ const routes: Routes = [
   { path: 'datatable', component: DatatableComponent },
   { path: 'login', component: LoginComponent },
   { path: 'breadcrumb', component: BreadcrumbComponent },
+  { path: 'datepicker', component: DatepickerComponent },
 ];
 
 @NgModule({
@@ -27,13 +30,15 @@ const routes: Routes = [
     DatatableComponent,
     LoginComponent,
     BreadcrumbComponent,
+    DatepickerComponent,
   ],
   imports: [
-    CommonModule,
+    CommonModule,    
     ComponentsModule,
     DataTablesModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    BsDatepickerModule.forRoot()
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],  
 })
 export class BaiwaModule { }

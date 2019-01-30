@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+  ) { }
 
   cardHeader: string = `
         Ts : import  CardsComponent
@@ -22,7 +23,7 @@ export class CardsComponent implements OnInit {
         <app-card>
             <p>content</p>
         </app-card>`
-  ngOnInit() {
+  ngOnInit() {   
   }
 
 }
