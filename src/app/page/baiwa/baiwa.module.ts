@@ -12,6 +12,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { AlertComponent } from './alert/alert.component';
+import { ModalPageComponent } from './modal-page/modal-page.component';
 
 const routes: Routes = [
   { path: 'buttons', component: ButtonComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'breadcrumb', component: BreadcrumbComponent },
   { path: 'datepicker', component: DatepickerComponent },
   { path: 'alert', component: AlertComponent },
+  { path: 'modal', component: ModalPageComponent },
 ];
 
 @NgModule({
@@ -34,6 +36,7 @@ const routes: Routes = [
     BreadcrumbComponent,
     DatepickerComponent,
     AlertComponent,
+    ModalPageComponent,
   ],
   imports: [
     CommonModule,    

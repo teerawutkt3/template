@@ -4,7 +4,7 @@ import { ButtonModule } from './buttons/button.module';
 import { CardModule } from './card/card.module';
 import { BreadcrumbModule } from './breadcrumb/breadcrumb.module';
 import { NotificationModule } from './notification/notification.module';
-import { AlertService } from './notification/alert.service';
+import { ModalModule } from './modal/modal.module';
 
 @NgModule({
   declarations: [],
@@ -14,13 +14,14 @@ import { AlertService } from './notification/alert.service';
     CardModule,
     BreadcrumbModule,
     NotificationModule,
-    
+    ModalModule
   ],
   exports: [
     ButtonModule,
     CardModule,
     BreadcrumbModule,
     NotificationModule,
+    ModalModule
   ],  
 })
 export class ComponentsModule { }
