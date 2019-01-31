@@ -4,7 +4,7 @@ import { ButtonModule } from './buttons/button.module';
 import { CardModule } from './card/card.module';
 import { BreadcrumbModule } from './breadcrumb/breadcrumb.module';
 import { NotificationModule } from './notification/notification.module';
-import { AlertService } from './notification/alert/alert.service';
+import { AlertService } from './notification/alert.service';
 
 @NgModule({
   declarations: [],
@@ -21,7 +21,6 @@ import { AlertService } from './notification/alert/alert.service';
     CardModule,
     BreadcrumbModule,
     NotificationModule,
-  ],
-  providers:[AlertService]
+  ],  
 })
 export class ComponentsModule { }

@@ -46,6 +46,10 @@
             <a href="#" routerLink="/components/datepicker" routerLinkActive="active"><i class="fa fa-circle-thin"></i>
               Datepicker</a>
           </li>
+          <li>
+            <a href="#" routerLink="/components/alert" routerLinkActive="active"><i class="fa fa-circle-thin"></i>
+              Alert</a>
+          </li>
         </ul>
       </li>
       <li>
@@ -93,13 +97,32 @@
               <a class="nav-link" href="#">Page</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"  routerLink="/components/login" routerLinkActive="active"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign in</a>
+              <a class="nav-link" href="#" routerLink="/components/login" routerLinkActive="active"><i class="fa fa-sign-in"
+                  aria-hidden="true"></i> Sign in</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container-fluid">
+
+
+      <!-- alert success -->
+      <div class="alert alert-success alert-dismissible fade show" style="display: none" id="alert-success">
+        <a class="close" onclick="$('#alert-success').hide()">×</a>
+        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+      </div>
+      <!-- alert danger -->
+      <div class="alert alert-danger alert-dismissible fade show" style="display: none" id="alert-danger">
+        <a class="close" onclick="$('#alert-danger').hide()">×</a>
+        <strong>Danger!</strong> fail process.
+      </div>
+      <!-- alert warning -->
+      <div class="alert alert-warning alert-dismissible fade show" style="display: none" id="alert-warning">
+        <a class="close" onclick="$('#alert-warning').hide()">×</a>
+        <strong>Warning!</strong> Warning process.
+      </div>
+
       <router-outlet></router-outlet>
     </div>
   </div>

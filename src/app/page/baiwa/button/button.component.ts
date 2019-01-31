@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertService } from 'src/app/components/notification/alert/alert.service';
-
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
@@ -9,7 +7,7 @@ import { AlertService } from 'src/app/components/notification/alert/alert.servic
 export class ButtonComponent implements OnInit {
 
   constructor(
-    private alertService : AlertService
+    
   ) { }
 
   btn: string = `
@@ -31,7 +29,7 @@ export class ButtonComponent implements OnInit {
   `;
 
   ngOnInit() {
-    this.alertService.alert();
+
   }
 
 }

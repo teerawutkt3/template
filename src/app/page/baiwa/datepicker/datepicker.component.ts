@@ -14,6 +14,9 @@ export class DatepickerComponent implements OnInit {
   maxDate = new Date();
 
   txtPicker : string = `
+
+  List : https://valor-software.com/ngx-bootstrap/#/datepicker
+
   <input 
         type="text" 
         class="form-control" 

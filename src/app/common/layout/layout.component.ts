@@ -8,6 +8,8 @@ declare var $: any;
 
 export class LayoutComponent implements OnInit {
 
+  alertSuccess :boolean = false;
+  alertDanger :boolean = false;
   constructor() {
   }
 
@@ -19,8 +21,11 @@ export class LayoutComponent implements OnInit {
         $(".dataTables_scrollHeadInner").css({ "width": "100%" });
         $(".table ").css({ "width": "100%" });
       });
-    });
+    });   
   }
+
+  
+
 
 
 
