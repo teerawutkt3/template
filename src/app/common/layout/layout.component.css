@@ -1,6 +1,6 @@
 .colorNav{
   /* background-image:  linear-gradient(to right, #54c4bb, #ffffff); */
-  background-color: #54c4bb !important; 
+  background-color: #238981 !important; 
   margin-bottom: 17px;
 }
 .wrapper {
@@ -70,20 +70,20 @@ a, a:hover, a:focus {
 
 #sidebar {
     /* don't forget to add all the previously mentioned styles here too */
-    background: #4b8b86;
+    background: #143d3a;
     color: #fff;
     transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
   padding: 7.5px;
-  background: #34a79d;
+  background: #1d6d66;
   color: #ffffff
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #3a7973;
+    border-bottom: 1px solid #143d3a;
 }
 
 #sidebar ul p {
@@ -103,11 +103,11 @@ a, a:hover, a:focus {
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #4b8b86;
+    background: #143d3a;
 }
 ul ul a {
   font-size: 14px !important;
     padding-left: 30px !important;
-    background: #4a7f7b;
+    background: #1f4946;
 }
 
