@@ -1,22 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DashboardComponent } from './page/dashboard/dashboard.component';
-import { Dashboard2Component } from './page/dashboard2/dashboard2.component';
 import { ComponentsModule } from './components/components.module';
+import { LoginComponent } from './page/baiwa/page/login/login.component';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'dashboard2', component: Dashboard2Component },
-  {
-    path: 'components',
-    loadChildren: './page/baiwa/baiwa.module#BaiwaModule'
-  },
+  { path: 'login', component: LoginComponent },
+  { path: '', loadChildren: './common/layout/layout.module#LayoutModule' },
+
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes,{ useHash: true }),
     ComponentsModule
   ],
   exports: [RouterModule]
