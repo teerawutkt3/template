@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --o",
+    "start": "ng serve --port 4444 --open",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --aot --prod",
+    "postinstall": "ng build --aot --prod"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +21,7 @@
     "@angular/platform-browser": "~7.1.0",
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
+    "@ngrx/store-devtools": "^7.4.0",
     "angular-datatables": "^7.0.0",
     "bootstrap": "^4.2.1",
     "chart.js": "^2.7.3",
@@ -26,10 +29,13 @@
     "datatables.net": "^1.10.19",
     "datatables.net-bs4": "^1.10.19",
     "datatables.net-dt": "^1.10.19",
+    "express": "^4.17.0",
+    "path": "^0.12.7",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "moment": "^2.24.0",
     "ngx-bootstrap": "^3.2.0",
+    "ngx-store": "^2.1.0",
     "rxjs": "~6.3.3",
     "select2": "^4.0.6-rc.1",
     "tslib": "^1.9.0",
@@ -57,5 +63,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.1.6"
+  },
+  "engines": {
+    "node": "~8.9.1",
+    "npm": "~6.0.0"
   }
 }

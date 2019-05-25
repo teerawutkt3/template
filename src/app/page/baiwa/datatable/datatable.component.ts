@@ -277,7 +277,7 @@ export class DatatableComponent implements OnInit {
   ]
   tableHtml = `
   <table datatable [dtOptions]="dtOptions"
-    class="table table-bordered table-striped table-sm" 
+    class="table table-bordered table-striped table-sm"
     style="width:100%">
    </table>`;
   tableTs = `
@@ -305,7 +305,7 @@ export class DatatableComponent implements OnInit {
     };
   `;
   tableTsAjax = `
-  
+
   `;
   ngOnInit() {
     this.dtOptions = {

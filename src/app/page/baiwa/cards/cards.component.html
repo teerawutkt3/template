@@ -1,24 +1,49 @@
 <div class="form-group">
-    <div class="row">
-        <div class="col-sm-6">
-            <app-card header="Title">
-                <p>content</p>
-            </app-card>
-        </div>
-        <div class="col-sm-6">
-            <pre>{{cardHeader}}</pre>
-        </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <app-card header="Title">
+        <p>content</p>
+      </app-card>
     </div>
+    <div class="col-sm-6">
+      <pre>{{cardHeader}}</pre>
+    </div>
+  </div>
 </div>
 <div class="form-group">
-    <div class="row">
-        <div class="col-sm-6">
-            <app-card>
-                <p>content</p>
-            </app-card>
-        </div>
-        <div class="col-sm-6">
-            <pre>{{cardBody}}</pre>
-        </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <app-card>
+        <p>content</p>
+      </app-card>
     </div>
+    <div class="col-sm-6">
+      <pre>{{cardBody}}</pre>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <div class="row">
+    <div class="col-sm-3">
+      <app-card2
+        [number]="6"
+        [icon]="'fa-address-book'"
+        [color]="'danger'"
+        [subTitle]="'sub title'"
+        [text]="'text'">
+      </app-card2>
+    </div>
+    <div class="col-sm-3">
+      <app-card2
+        [number]="2"
+        [icon]="'fa-podcast'"
+        [color]="'warning'"
+        [subTitle]="'sub title'"
+        [text]="'text'">
+      </app-card2>
+    </div>
+    <div class="col-sm-6">
+      <pre>{{card2}}</pre>
+    </div>
+  </div>
 </div>

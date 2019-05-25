@@ -23,7 +23,17 @@ export class CardsComponent implements OnInit {
         <app-card>
             <p>content</p>
         </app-card>`
-  ngOnInit() {   
+
+  card2: string = `
+  <app-card2>
+    [number]="6"
+    [icon]="fa-address-book"
+    [color]="'danger'"
+    [subTitle]="'sub title'"
+    [text]="'text"
+  </app-card2>
+`
+  ngOnInit() {
   }
 
 }
