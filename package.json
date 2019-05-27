@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
@@ -30,12 +30,13 @@
     "datatables.net-bs4": "^1.10.19",
     "datatables.net-dt": "^1.10.19",
     "express": "^4.17.0",
-    "path": "^0.12.7",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "moment": "^2.24.0",
+    "ng-select2": "^1.0.8",
     "ngx-bootstrap": "^3.2.0",
     "ngx-store": "^2.1.0",
+    "path": "^0.12.7",
     "rxjs": "~6.3.3",
     "select2": "^4.0.6-rc.1",
     "tslib": "^1.9.0",
@@ -65,7 +66,7 @@
     "typescript": "~3.1.6"
   },
   "engines": {
-    "node": "~8.9.1",
-    "npm": "~6.0.0"
+    "node": "8.12.0",
+    "npm": "6.4.1"
   }
 }

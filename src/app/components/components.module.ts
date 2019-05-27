@@ -5,6 +5,7 @@ import { CardModule } from './card/card.module';
 import { BreadcrumbModule } from './breadcrumb/breadcrumb.module';
 import { NotificationModule } from './notification/notification.module';
 import { ModalModule } from './modal/modal.module';
+import { NgSelect2Module } from 'ng-select2';
 
 @NgModule({
   declarations: [],
@@ -21,7 +22,8 @@ import { ModalModule } from './modal/modal.module';
     CardModule,
     BreadcrumbModule,
     NotificationModule,
-    ModalModule
-  ],  
+    ModalModule,
+    NgSelect2Module
+  ],
 })
 export class ComponentsModule { }

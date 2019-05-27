@@ -13,6 +13,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { AlertComponent } from './alert/alert.component';
 import { ModalPageComponent } from './modal-page/modal-page.component';
+import { Select2Component } from './select2/select2.component';
+import { NgSelect2Module } from 'ng-select2';
 
 const routes: Routes = [
   { path: 'buttons', component: ButtonComponent },
@@ -24,6 +26,7 @@ const routes: Routes = [
   { path: 'datepicker', component: DatepickerComponent },
   { path: 'alert', component: AlertComponent },
   { path: 'modal', component: ModalPageComponent },
+  { path: 'select2', component: Select2Component },
 ];
 
 @NgModule({
@@ -37,14 +40,15 @@ const routes: Routes = [
     DatepickerComponent,
     AlertComponent,
     ModalPageComponent,
+    Select2Component,
   ],
   imports: [
-    CommonModule,    
+    CommonModule,
     ComponentsModule,
     DataTablesModule,
     RouterModule.forChild(routes),
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
   ],
-  exports: [RouterModule],  
+  exports: [RouterModule],
 })
 export class BaiwaModule { }
